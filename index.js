@@ -36,7 +36,7 @@ app.get('/barcode', (req, res) => {
 });
 
 // POST route - JSON body
-app.post('/barcode', (req, res) => {
+app.post('/barcode', (req, res) => { 
     const { text = '', bcType = 'code128' } = req.body;
 
     if (!text) {
